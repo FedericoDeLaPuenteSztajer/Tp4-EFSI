@@ -1,6 +1,6 @@
 function Cita(props) {
     return (
-        <div class="cita">
+        <div className="cita">
             <p>Mascota: <span>{props.mascota}</span></p>
             <p>Dueño: <span>{props.duenio}</span></p>
             <p>Fecha: <span>{props.fecha}</span></p>

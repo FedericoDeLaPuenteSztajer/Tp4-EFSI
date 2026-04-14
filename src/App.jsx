@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <h1>ADMINISTRADOR DE PACIENTES</h1>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <Formulario />
           <Listado />
         </div>
