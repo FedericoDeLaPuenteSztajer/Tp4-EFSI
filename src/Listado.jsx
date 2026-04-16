@@ -5,6 +5,7 @@ function Listado(props) {
         <div className="one-half column">
             {props.ListaCitas.map((cita) => (
                 <Cita
+                    id= {cita}
                     mascota={cita.mascota}
                     duenio={cita.duenio}
                     fecha={cita.fecha}
