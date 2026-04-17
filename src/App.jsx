@@ -1,4 +1,3 @@
-//import './App.css'
 import { useEffect, useState } from 'react';
 import Formulario from './Formulario.jsx'
 import Listado from './Listado.jsx'
@@ -12,8 +11,8 @@ function App() {
     setCitas(prev => [...prev, newCita]) // sin cambiar la anterior lista agrega el nuevo dato
   }
 
-  const ElminarCita = (id) => { 
-    const newList = citas.filter((c) => c.id!=id)
+  const ElminarCita = (deleteById) => { 
+    const newList = citas.filter((c) => c.id!=deleteById)
     setCitas(newList)
   }
 
@@ -23,7 +22,7 @@ function App() {
       <div className="container">
         <div className="row">
           <Formulario lastId={lastId} setId={setId} CrearCita={CrearCita} />
-          <Listado ListaCitas={citas} />
+          <Listado ListaCitas={citas} EliminarCita={ElminarCita}/>
         </div>
       </div>
     </>

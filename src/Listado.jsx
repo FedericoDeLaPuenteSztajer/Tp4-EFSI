@@ -5,12 +5,13 @@ function Listado(props) {
         <div className="one-half column">
             {props.ListaCitas.map((cita) => (
                 <Cita
-                    id= {cita}
+                    id= {cita.id}
                     mascota={cita.mascota}
                     duenio={cita.duenio}
                     fecha={cita.fecha}
                     hora={cita.hora}
                     sintomas={cita.sintomas}
+                    EliminarCita={props.EliminarCita}
                 />
             ))}
         </div>

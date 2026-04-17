@@ -6,7 +6,7 @@ function Cita(props) {
             <p>Fecha: <span>{props.fecha}</span></p>
             <p>Hora: <span>{props.hora}</span></p>
             <p>Sintomas: <span>{props.sintomas}</span></p>
-            <button class="button elimnar u-full-width">Eliminar ×</button>
+            <button class="button elimnar u-full-width" onClick={() => props.EliminarCita(props.id)}>Eliminar ×</button>
         </div>
     )
 }
